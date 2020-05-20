@@ -1,17 +1,16 @@
 import React from 'react'
-import { Chart} from 'react-google-charts'
+import { Chart } from 'react-google-charts'
 
 const WordTree = props => {
-  let classValue = props.classValue
-
   return (
-    <Chart
-      width={'800px'}
-      height={'300px'}
-      chartType="WordTree"
-      loader={<div>Loading Chart</div>}
-      data={[
-        ['Phrases'],
+    <div style={{ display: 'inline-block' }}>
+      <Chart
+        width={'800px'}
+        height={'500px'}
+        chartType="WordTree"
+        loader={<div>Loading Chart</div>}
+        data={[
+          ['Phrases'],
           ['Vivian learned languages Ruby'],
           ['Vivian learned languages Javascript'],
           ['Vivian learned languages HTML'],
@@ -21,14 +20,15 @@ const WordTree = props => {
           ['Vivian learned testing Rspec'],
           ['Vivian learned testing Capybara'],
           ['Vivian is a full stack developer'],
-      ]}
-      options={{
-        wordtree: {
-          format: 'implicit',
-          word: 'Vivian',
-        },
-      }}
-    />
+        ]}
+        options={{
+          wordtree: {
+            format: 'implicit',
+            word: 'Vivian',
+          },
+        }}
+      />
+    </div>
   )
 }
 
