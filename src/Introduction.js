@@ -11,8 +11,7 @@ const Introduction = props => {
       <WordTree />
       <h3>I had my first introduction to software development in my previous roles</h3>
       <h3>as a small business owner and a legal project coordinator</h3>
-
-    < Timeline />
+      < Timeline />
     </div>
   )
 }
